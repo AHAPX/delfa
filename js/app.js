@@ -56,7 +56,6 @@
         var padding         = 0;
 
         contentElem.each(function(i, el) {
-            console.log( $(el).outerWidth() );
             contentWidth += parseInt($(el).outerWidth());
         });
 
