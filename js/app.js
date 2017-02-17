@@ -67,8 +67,6 @@
             'padding-left': padding / n + '%',
             'padding-right': padding / n + '%'
         });
-
-        console.log(contentWidth);
     }
     function addIEClass(ie) {
        $('html').addClass('ie ie-' + ie);
@@ -88,23 +86,13 @@
         var ieVersion = detectIE();
         if(ieVersion !== false && ieVersion < 11) {
             addIEClass(ieVersion);
-            setTimeout(function() {
-                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
-                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
+            var idInterval = setInterval(function() {
+                if($('html').hasClass('ie')) {
+                    clearInterval(idInterval);
+                    updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
+                    updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
+                }
             }, 100);
-            setTimeout(function() {
-                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
-                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
-            }, 300);
-            setTimeout(function() {
-                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
-                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
-            }, 600);
-            setTimeout(function() {
-                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
-                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
-            }, 1000);
-            alert('ok');
         }
 
         if($.fn.owlCarousel) {
