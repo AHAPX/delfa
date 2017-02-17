@@ -481,6 +481,14 @@ body {
     font-weight: bold;
     padding-top: 8px;
 }
+.next-courses__content > .next-courses__header {
+    position: relative;
+    padding-bottom: 15px;
+    bottom: -8px;
+}
+.next-courses__content_action > .next-courses__header {
+    bottom: 0;
+}
 
 .ie-9 .next-courses__header {
     font-size: 20px;
@@ -507,12 +515,21 @@ body {
     background-size: 100% 100%;
 }
 .next-courses__price {
+    position: relative;
     color: #60e001;
     font-family: 'PT Sans', sans-serif;
     font-size: 25px;
     font-weight: bold;
     float: right;
     margin-top: -35px;
+}
+.next-courses__price > span {
+    top: -15px;
+    right: 0;
+    position: absolute;
+    color: #434343;
+    font-size: 16px;
+    text-decoration: line-through;
 }
 
 .ie-9 .next-courses__desc {
@@ -1222,7 +1239,15 @@ body {
     border-radius: 34px;
 }
 .buy-form .btn_blue {
-    float: right;
+    width: 100%;
+}
+.buy-form .btn_green {
+    width: 100%;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+.buy-form__hidden {
+    display: none;
 }
 .send-review .btn {
     float: right;

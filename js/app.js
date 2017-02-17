@@ -114,7 +114,16 @@
                     }
                 }
             });
-        }
+        };
+
+        $('.buy-form .btn_green').click(function(e) {
+            e.preventDefault();
+
+            $(this).hide();
+            $('.buy-form__hidden').show();
+            $('.buy-form input:first').focus();
+        });
+
 
         $('.right-page-toggle').click(function() {
             $('.right-page-toggle, .right-page').toggleClass('active');
