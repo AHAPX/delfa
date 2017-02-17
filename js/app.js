@@ -92,6 +92,19 @@
                 updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
                 updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
             }, 100);
+            setTimeout(function() {
+                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
+                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
+            }, 300);
+            setTimeout(function() {
+                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
+                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
+            }, 600);
+            setTimeout(function() {
+                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
+                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
+            }, 1000);
+            alert('ok');
         }
 
         if($.fn.owlCarousel) {
