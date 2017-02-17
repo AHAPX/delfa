@@ -97,7 +97,6 @@
                 }
             }, 100);
         }
-        // alert(ieVersion);
 
         if($.fn.owlCarousel) {
             $('.page-content .owl-carousel').owlCarousel({
