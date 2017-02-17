@@ -88,16 +88,25 @@
         var ieVersion = detectIE();
         if(ieVersion !== false && ieVersion < 11) {
             addIEClass(ieVersion);
-
-            var idInterval = setInterval(function() {
-                if($('html').hasClass('ie')) {
-                    clearInterval(idInterval);
-                    updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
-                    updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
-                }
+            setTimeout(function() {
+                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
+                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
             }, 100);
+            setTimeout(function() {
+                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
+                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
+            }, 300);
+            setTimeout(function() {
+                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
+                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
+            }, 600);
+            setTimeout(function() {
+                updateFlexIE($('.nav__header ul'), $('.nav__header ul > li'), 1.99999);
+                updateFlexIE($('.footer__nav'), $('.footer__nav > li'), 1.89999);
+            }, 1000);
+
         }
-        // alert(ieVersion);
+        alert(ieVersion);
 
         if($.fn.owlCarousel) {
             $('.page-content .owl-carousel').owlCarousel({
