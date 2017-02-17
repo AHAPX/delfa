@@ -333,11 +333,15 @@ body {
     margin: 0 auto;
 }
 .right-block__item-news,
-.right-block__item-news a {
+.right-block__item-news-date {
     color: #202020;
     font-family: 'PT Sans', sans-serif;
     font-size: 12px;
     font-weight: 400;
+}
+.right-block__item-news-date {
+    padding-bottom: 5px;
+    text-decoration: underline;
 }
 .right-block__item-news:after {
     display: block;
