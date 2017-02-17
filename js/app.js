@@ -85,6 +85,9 @@
     }
     $(document).ready(function() {
         var ieVersion = detectIE();
+        if(document.documentMode || /Edge/.test(navigator.userAgent))
+            ieVersion = 9;
+
         if(ieVersion !== false && ieVersion < 11) {
             addIEClass(ieVersion);
             var idInterval = setInterval(function() {
