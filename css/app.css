@@ -843,7 +843,9 @@ body {
     font-size: 13px;
 }
 
-
+.reviews_page li:last-child .reviews__line {
+    display: none;
+}
 .reviews__header {
     color: #2c7db2;
     font-family: 'PT Sans', sans-serif;
@@ -1276,8 +1278,16 @@ body {
     margin-top: -12px;
 }
 
-.right-page .reviews {
+.reviews_page {
     padding-top: 35px;
+    padding-bottom: 35px;
+}
+.reviews_page .reviews__list li {
+    width: 100% !important;
+}
+.reviews_page .reviews__list li .reviews__line {
+    visibility: visible !important;
+    margin-bottom: 24px !important;
 }
 
 .right-page .right-block__news {
@@ -1417,6 +1427,11 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    overflow: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 .page-content h6 {
     color: #313131;
@@ -2084,4 +2099,7 @@ body {
 
 .clearfix {
     *zoom: 1;
+}
+.clearfix_left {
+    clear: left;
 }
