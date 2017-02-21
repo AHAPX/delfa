@@ -435,6 +435,10 @@ body {
 .next-courses__list {
     margin-right: -10px;
 }
+.next-courses__list_like-line li {
+    float: none !important;
+    width: 100% !important;
+}
 
 .ie-9 .next-courses__list {
     margin-right: 0;
@@ -1200,9 +1204,17 @@ body {
 }
 
 
+.right-similar-courses {
+    padding-bottom: 20px;
+}
+.right-similar-courses .page-right-header {
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+
 .right-page .buy-form {
     margin-top: -7px;
-    margin-bottom: 20px;
 }
 .buy-form p:first-child,
 .send-review p:first-child {
@@ -1248,7 +1260,6 @@ body {
 .buy-form .btn_green {
     width: 100%;
     margin-top: -5px;
-    margin-bottom: 15px;
 }
 .buy-form__hidden {
     display: none;
