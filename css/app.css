@@ -1669,6 +1669,49 @@ body {
 
 
 
+/* article */
+.article h1 {
+    text-align: center;
+    color: #292929;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.article,
+.article p {
+    color: #292929;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+.article p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.article a {
+    color: #0071d0;
+    text-decoration: none;
+}
+.article a:hover {
+    text-decoration: underline;
+}
+.article ul li {
+    list-style-type: disc;
+}
+.article__sub-header {
+    margin-left: -25px;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+.article__sub-content {
+    padding-left: 25px;
+}
+
+
+
+/* article */
+
 
 /* ==========================================================================
    Media Queries
@@ -1776,6 +1819,9 @@ body {
         -ms-transform-origin: left bottom;
         -o-transform-origin: left bottom;
         transform-origin: left bottom;
+    }
+    .article {
+        padding: 0 10px;
     }
 }
 @media(max-width: 950px) {
@@ -1916,6 +1962,17 @@ body {
 @media(max-width: 700px) {
     .header h1 {
         display: none;
+    }
+    .article h1 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .article,
+    .article p {
+        font-size: 14px;
+    }
+    .article__sub-header {
+        font-size: 20px;
     }
 }
 @media(max-width: 660px) {
