@@ -1,0 +1,440 @@
+.content-article {}
+.content-article h1 {
+    color: #313131;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.content-article .side-right h5 {
+    color: #2c7db2;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 17px;
+    padding-bottom: 5px;
+}
+
+.content-article .side-right h6 {
+    color: #2c7db2;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.ie .content-article .side-right h5 {
+    font-size: 22px;
+}
+
+
+
+
+
+
+.content-article .side-right .teachers-list__content {
+    padding-top: 37px;
+}
+.content-article .side-right .teachers-list__photo {
+    width: 210px;
+    height: 210px;
+}
+.content-article .side-right .teachers-list__about {
+    padding-top: 22px;
+}
+.content-article .side-right .teachers-list__desk {
+    color: #2d2d2e;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 21px;
+}
+
+.content-article .side-right .join-course-form {
+    padding: 10px 0;
+}
+.content-article .side-right .join-course-form .btn_blue,
+.content-article .side-right .join-course-form p,
+.content-article .side-right .join-course-form input
+{
+    display: none;
+}
+.content-article .side-right .join-course-form .btn_green {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+.content-article .side-right .join-course-form .btn_blue {
+    float: right;
+}
+
+.ie .content-article .side-right .join-course-form .btn_green {
+    font-size: 14px;
+}
+
+
+
+
+
+.content-article .side-right .send-review-from {
+    padding-top: 20px;
+}
+.content-article .side-right .send-review-from .btn {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+.content-article .side-right ul {
+    padding-left: 0 !important;
+}
+.content-article .side-right ul li {
+    list-style-type: none;
+}
+
+.content-article strong {
+    display: block;
+    color: #313131;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.content-article p,
+.content-article ol {
+    color: #313131;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0;
+    min-height: 1px;
+}
+
+.content-article ul li {
+    list-style-type: disc;
+}
+
+.content-article ol,
+.content-article ul {
+    padding-left: 30px;
+}
+
+.content-article ol ul {
+    margin: 0;
+    margin-top: -5px;
+}
+
+.content-article iframe.video {
+    width: 100% !important;
+    height: 320px !important;
+    margin-top: 10px;
+}
+
+
+
+
+
+.article-head-info {}
+.article-head-info > * {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.article-head-info__hours {
+    color: #000000;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.article-head-info__days {
+    position: relative;
+    color: #000000;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    bottom: -3px;
+}
+.article-head-info__price {
+    color: #60e001;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 0;
+}
+.article-head-info__start {
+    display: block;
+    color: #000000;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.article-head-info__hours > span {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/courses-list-hours.png) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 14px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 5px;
+}
+.article-head-info__days > span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/article-head-info-days.png) center center no-repeat;
+    background-size: cover;
+    width: 23px;
+    height: 23px;
+    top: -3px;
+    margin-right: 5px;
+}
+.article-head-info__price > span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/article-head-info-price.png) center center no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    top: -2px;
+    margin-right: -3px;
+}
+
+
+
+
+
+
+.content-article .owl-carousel .item {
+    height: 120px;
+}
+.content-article .owl-carousel .item__image {
+    background: center center no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.content-article .owl-1 {
+    position: relative;
+    padding: 0 23px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.content-article .owl-1 .owl-dots {
+    display: none !important;
+}
+.content-article .owl-1 .owl-prev {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 36px;
+    top: 40px;
+    left: -28px;
+    font-size: 0 !important;
+    background: url(../img/owl-prev.png) transparent !important;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.content-article .owl-1 .owl-next {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 36px;
+    top: 40px;
+    right: -28px;
+    font-size: 0 !important;
+    background: url(../img/owl-next.png) transparent !important;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.content-article .next-courses__list {
+    padding-top: 15px;
+}
+
+
+
+
+.article-reviews {}
+.article-reviews ul {
+    padding: 0;
+}
+.article-reviews ul li:last-child .list-reviews__content:after {
+    display: none;
+}
+.article-reviews ul li {
+    list-style-type: none;
+}
+.article-reviews__header {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.article-reviews .list-reviews__author {
+    color: #2c7db2;
+    text-transform: uppercase;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+
+
+
+
+.content-article_about-shcool h1 {
+    text-align: center;
+    padding-top: 28px;
+}
+.content-article_about-shcool strong {
+    font-family: 'PT Sans', sans-serif;
+    color: #2c7db2 !important;
+    font-size: 18px !important;
+    text-transform: none !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+    padding-bottom: 15px !important;
+    margin-bottom: -10px !important;
+    padding-top: 25px !important;
+}
+.content-article_about-shcool img {
+    margin-left: 10px;
+}
+.content-article_about-shcool a {
+    font-family: 'PT Sans', sans-serif;
+    color: #2c7db2;
+    text-decoration: none;
+}
+.content-article_about-shcool a:hover {
+    text-decoration: underline;
+}
+.content-article_about-shcool p {
+    padding: 10px;
+    text-align: justify;
+    margin: 0 !important;
+}
+.content-article_about-shcool .side-left {
+    padding: 0 10px;
+}
+.content-article_about-shcool .side-right .join-course-form {
+    padding-top: 20px;
+}
+.content-article_about-shcool .side-right .join-course-form p:first-child {
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+.content-article_about h1 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.content-article_about p {
+    font-size: 18px !important;
+}
+.content-article_about strong {
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.content-article_about ul,
+.content-article_about ol {
+    padding-left: 20px;
+}
+.content-article_about a {
+    color: #2c7db2;
+    text-decoration: none;
+}
+.content-article_about a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 960px) {
+    .side-right__toggle {
+        display: block;
+    }
+    .side-right {
+        width: 290px !important;
+        padding-left: 5px;
+        padding-right: 5px;
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        right: -290px;
+        height: 100%;
+        margin-right: 0 !important;
+        background-color: #fff;
+        overflow: auto;
+        overflow-x: hidden;
+        padding-bottom: 10px;
+        -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.75);
+        -webkit-transition: right .3s;
+        -o-transition: right .3s;
+        transition: right .3s;
+    }
+   .side-right .courses-list {
+        margin-left: -8px;
+        margin-right: -8px;
+   }
+    .side-right .btn {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .content > .content-960 {
+        padding-left: 10px;
+        padding-right: 10px !important;
+    }
+    .article-reviews {
+        display: none;
+    }
+
+   .content.content_side-right .content-article_about-shcool {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .content-article_about-shcool .article-reviews {
+        display: block;
+    }
+    .content-article_about-shcool .list-news {
+        padding-right: 0 !important;
+    }
+    .content-article_about-shcool h1 {
+        padding-top: 0px;
+    }
+}
+@media (max-width: 400px) {
+    .content-article h1 {
+        font-size: 24px;
+    }
+    .content-article_about strong {
+        font-size: 20px;
+    }
+}
