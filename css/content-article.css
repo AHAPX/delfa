@@ -314,7 +314,12 @@
     padding-top: 25px !important;
 }
 .content-article_about-shcool img {
-    margin-left: 10px;
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .content-article_about-shcool a {
     font-family: 'PT Sans', sans-serif;
@@ -411,9 +416,6 @@
     .content > .content-960 {
         padding-left: 10px;
         padding-right: 10px !important;
-    }
-    .article-reviews {
-        display: none;
     }
 
    .content.content_side-right .content-article_about-shcool {
