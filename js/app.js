@@ -92,6 +92,9 @@
     if(ieVersion !== false && ieVersion < 11) {
         $('html').addClass('ie ie-' + ieVersion);
     }
+    if(window.navigator.userAgent.indexOf("Edge") > -1) {
+        $('html').addClass('ie edge');
+    }
 
     $(document).ready(function() {
         if($.fn.owlCarousel) {
