@@ -9,6 +9,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.css">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/index.css">
     </head>
@@ -538,10 +539,33 @@
 
     </footer>
     <!-- END FOOTER -->
+    
+    <!-- for feedback -->
+    <script type="text/template" id="feedback-template">
+        <form action="" class="feedback">
+            <div class="feedback__error"></div>
+            <p>Ваше имя</p>
+            <input type="text" name="name">
+            <p>Номер телефона</p>
+            <input type="text" name="phone">
+            <div class="feedback__recaptcha"></div>
+            <button class="btn btn_blue">Заказать звонок</button>
+            <div class="feedback__success-error">Ошибка: пожалуйста перегрузите страницу и попробуйте снова.</div>
+            <div class="feedback__success">Спасибо! В ближайшее время мы Вам позвоним!</div>
+        </form>
+    </script>
+    <!-- for feedback -->
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd-ZXO2cYSofsPVLtW-MfWdKzIDCiI-d8"></script>
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/gmaps.min.js"></script>
+
+    <!-- for feedback -->
+    <script src="js/vendor/fancybox/jquery.fancybox.js"></script>
+    <script src="js/vendor/jquery.maskedinput.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- for feedback -->
+
     <script src="js/app.js"></script>
     <script>
         var map = new GMaps({
@@ -549,6 +573,82 @@
             lat: 55.7558,
             lng: 37.6173
         });
+
+        // for feedback
+        $('.header .btn_green').click(function(e) {
+            e.preventDefault();
+            feedbackInner();
+        });
+        function feedbackInner() {
+            $.fancybox({
+                content: '<span></span>',
+                height: 'auto',
+                minHeight: 50,
+                afterShow: function() {
+                    var el = {
+                        inner: $('.fancybox-inner')
+                    };
+
+                    el.inner.html($('#feedback-template').html());
+
+                    el.form = el.inner.find('form.feedback');
+                    el.inputName = el.inner.find('input[name="name"]');
+                    el.inputPhone = el.inner.find('input[name="phone"]');
+                    el.btn = el.inner.find('.btn');
+
+                    el.inputPhone.mask('+7 (999) 999 99 99');
+                    setTimeout(function() {
+                        el.inputName.focus();
+                    }, 300);
+
+                    el.form.submit(function(e) {
+                        e.preventDefault();
+
+                        var data = {
+                            name: el.inputName.val(),
+                            phone: el.inputPhone.val()
+                        };
+
+                        el.form.find('.feedback__error').remove();
+                        $.fancybox.update();
+
+                        if(data.name.trim() == '') {
+                            el.form.prepend('<div class="feedback__error">Пожалуйста, заполните форму с Вашим именем!</div>');
+                            el.inputName.focus();
+                            $.fancybox.update();
+                            return;
+                        }
+                        else if(data.phone.trim() == '') {
+                            el.form.prepend('<div class="feedback__error">Пожалуйста, заполните форму с Вашим мобильным номером!</div>');
+                            el.inputPhone.focus();
+                            $.fancybox.update();
+                            return;
+                        }
+
+                        el.form.find('p').hide();
+                        el.inputName.hide();
+                        el.inputPhone.hide();
+                        el.btn.hide();
+
+                        grecaptcha.render(el.inner.find('.feedback__recaptcha')[0], {
+                            'sitekey' : '6LfR3RgUAAAAABw1esxBfJPlSr6aOT7lRmkqx79J',
+                            'callback' : function() { 
+                                /*  Прошли проверку в браузере, 
+                                    здесь нужно отправить ajax запрос на свой сервер,
+                                    и проверить дополнительно, как: все в документации по reCaptcha v2.0)
+                                */
+
+                                el.inner.find('.feedback__recaptcha').remove();
+                                el.form.find('.feedback__success').show();
+                                // el.form.find('.feedback__success-error').show(); Если ошибка
+                                $.fancybox.update();
+                            }
+                        });
+                    });
+                }
+            });
+            // for feedback
+        }
     </script>
 </body>
 </html>
