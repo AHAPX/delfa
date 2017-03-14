@@ -641,6 +641,11 @@
                                 el.inner.find('.feedback__recaptcha').remove();
                                 el.form.find('.feedback__success').show();
                                 // el.form.find('.feedback__success-error').show(); Если ошибка
+
+                                try {
+                                    $('.g-recaptcha-bubble-arrow').parent().remove(); //fix ie bug
+                                } catch(e) {}
+                                
                                 $.fancybox.update();
                             }
                         });
