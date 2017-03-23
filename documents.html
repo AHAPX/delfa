@@ -1,69 +1,84 @@
 <!doctype html>
-<html class="no-js" lang="ru_RU">
+<html class="no-js" lang="ru">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/content-article.css">
         <link rel="stylesheet" href="js/vendor/owl/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="js/vendor/owl/assets/owl.theme.default.min.css">
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/app.css">
     </head>
-    <body>
-        <!-- BEGIN HEADER -->
-        <header class="header">
+<body>
+    <!-- BEGIIN HEADER -->
+    <header class="header">
+        <nav class="header__nav">
             <div class="content-960">
-                <h1>Компьютерныйучебный центр «Дельфа», Тюмень</h1>
-                <div class="header__right">
-                    <a href="" class="header__personal-area"><img src="img/header__personal-area.png" alt="">Личный кабинет</a>
-                    <div class="header__adress">
-                        <ul>
-                            <li><span><span class="hide-ie">ул. </span>Республики, 61</span><img src="img/header__adress-1.png" alt=""></li>
-                            <li><span>+7(3452)38-77-77</span><img src="img/header__adress-2.png" alt=""></li>
-                            <li><span>info@delfa72.ru</span><img src="img/header__adress-3.png" alt=""></li>
-                        </ul>
-                    </div>
-                    <button class="btn header__request-call">Заказать звонок</button>
-                </div>
-                <a href="" class="logo">
-                    <img src="img/logo.png" alt="">
-                    <span class="logo__text">21 год успешной работы</span>
+                <ul data-style="display: flex">
+                    <li><a href="" class="active">Главная</a></li>
+                    <li><a href="">Курсы</a></li>
+                    <li><a href="">Школа информатики</a></li>
+                    <li><a href="">Наши преподаватели</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-960">
+            <h2 class="header__header">Компьютерный учебный центр<br>«Дельфа», Тюмень</h2>
+            <div class="header__right-block">
+                <a href="" class="header__text-icon header__text-icon_auth">
+                    <img src="img/text-icon-auth.png" alt=""><span>Личный кабинет</span>
                 </a>
-            </div>
-            <nav class="nav__header">
-                <div class="content-960">
-                    <ul>
-                        <li><a href="">Главная</a></li>
-                        <li><a class="active" href="">Курсы</a></li>
-                        <li><a href="">Школа информатики</a></li>
-                        <li><a href="">Наши преподаватели</a></li>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Контакты</a></li>
-                    </ul>
+                <div class="header__text-icon header__text-icon_address">
+                    <img src="img/text-icon-address.png" alt=""><span>ул. </span>Республики, 61
                 </div>
-            </nav>
-        </header>
-        <!-- END HEADER -->
-
-        <!-- BEGIN SUB-HEADER -->
-        <div class="sub-header">
-            <div class="content-960">
-                <input type="text" class="sub-header__search">
-                <button class="sub-header__btn">Поиск</button>
+                <div class="header__text-icon header__text-icon_phone">
+                    <img src="img/text-icon-phone.png" alt="">+8 (800) 250 11 10
+                </div>
+                <div class="header__text-icon header__text-icon_email">
+                    <img src="img/text-icon-email.png" alt="">info@delfa72.ru
+                </div>
+                <button class="btn btn_green">Заказать звонок</button>
             </div>
+            <a href="" class="logo">
+                <img src="img/logo.png" alt="">
+                <span>21 год успешной работы</span>
+            </a>
         </div>
-        <!-- END SUB-HEADER -->
-        
-        <div class="content-960 article">
-            <h1>Сведения об образовательной организации</h1>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Основные сведения</div>
-                <p><b>Полное наименование организации:</b></p>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- BEGIN SEARCH -->
+    <div class="search">
+        <form class="content-960">
+            <input type="text" placeholder="Введите текст для поиска..." class="search__input">
+            <button class="search__btn">Поиск</button>
+        </form>
+    </div>
+    <!-- END SEARCH -->
+
+    <!-- BEGIN CONTENT -->
+    <section class="content">
+        <div class="content-960 content-article content-article_documents clearfix">
+            <div class="side-left">
+                <!-- BEGIN BREADCRUMBS -->
+                <ul class="breadcrumbs">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Магазин курсов</a></li>
+                    <li>Adobe After Effects</li>
+                </ul>
+                <!-- END BREADCRUMBS -->
+
+                <h1>СВЕДЕНИЯ ОБ ОБРАЗОВАТЕЛЬНОЙ ОРГАНИЗАЦИИ</h1>
+
+                <h2>Основные сведения</h2>
+
                 <p>Частное учреждение дополнительного образования «Учебный центр «ДЕЛЬФА».</p>
                 <p><b>Сокращенное наименование:</b></p>
                 <p>ЧУДО «Учебный центр «ДЕЛЬФА».</p>
@@ -85,14 +100,18 @@
                 <p>понедельник - суббота 08.30 - 21.00</p>
                 <p>выходной день: воскресенье</p>
                 <p><a href="">Сведения об образовательной организации</a></p>
-            </div>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Структура и органы управления образовательной организацией</div>
+
+
+
+                <h2>Структура и органы управления образовательной организацией</h2>
+
                 <p>Структурное подразделение ЧУДО «Учебный центр «ДЕЛЬФА» - Городская школа информатики и компьютерных технологий.</p>
                 <p><a href="">Положение о Городской школе информатики и компьютерных технологий.</a></p>
-            </div>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Документы</div>
+
+
+
+                <h2>Документы</h2>
+
                 <p><a href="">Устав ЧУДО «Учебный центр «ДЕЛЬФА»</a></p>
                 <p><a href="">Лицензия на осуществление образовательной деятельности (с приложениями)</a></p>
                 <p><a href="">План финансово-хозяйственной деятельности</a></p>
@@ -114,9 +133,11 @@
                 <p><a href="">Порядок ознакомления с документами, регламентирующими организацию и осуществление образовательной деятельности</a></p>
                 <p><a href="">Отчет о результатах самообледования</a></p>
                 <p><a href="">Отчет об исполнении предписания</a></p>
-            </div>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Образование</div>
+
+
+
+                <h2>Образование</h2>
+
                 <p>ЧУДО «Учебный центр «ДЕЛЬФА» реализует программы дополнительного образования в рамках лицензии 72 Л 01 № 0001775 рег. № 141 от 17.06.2016</p>
                 <p><a href="">Дополнительная образовательная программа Городской школы информатики и компьютерных технологий (структурного подразделения ЧУДО «Учебный центр «Дельфа»)</a></p>
                 <p><a href="">Программа профессионального обучения «Оператор ПК»</a></p>
@@ -130,23 +151,28 @@
                 <p><a href="">Программа профессионального обучения «Компьютерная верстка Adobe InDesign»</a></p>
                 <p><a href="">Программа профессионального обучения «Мастер по обслуживанию компьютерной и офисной техники»</a></p>
                 <p><a href="">Положение о Городской школе информатики и компьютерных технологий</a></p>
-            </div>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Образовательные стандарты</div>
+
+
+
+                <h2>Образовательные стандарты</h2>
+
                 <p><a href="">Федеральный закон Российской Федерации "Об образовании в Российской Федерации" от 29 декабря 2012 г. N 273-ФЗ</a></p>
                 <p><a href="">Концепция развития дополнительного образования детей от 4 сентября 2014 г. N 1726-р</a></p>
                 <p><a href="">Приказ Минобрнауки России от 29 августа 2013 г. N 1008 "Об утверждении Порядка организации и осуществления образовательной деятельности по дополнительным общеобразовательным программам"</a></p>
-            </div>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Руководство. Педагогический состав.</div>
+
+
+
+                <h2>Руководство. Педагогический состав.</h2>
+
                 <p><b>Руководитель организации:</b></p>
                 <p>Директор ЧУДО «Учебный центр «ДЕЛЬФА» и Городской школы информатики и компьютерных технологий (структурного подразделения) Беличева Любовь Михайловна, образование высшее, стаж работы 33 лет, тел. (3452) 46-33-18, электронный адрес: <a href="">belicheva@delfa.cc</a></p>
                 <p><b>Заместитель руководителя организации:</b></p>
                 <p>Зам. директора по учебной части – Корякина Елена Андреевна, образование высшее педагогическое, стаж работы 18 лет, тел. 89129999911, электронный адрес: <a href="">koriakina@delfa.cc</a></p>
                 <p><a href="">Педагогический состав работников ЧУДО «Учебный центр «ДЕЛЬФА» и Городской школы информатики и компьютерных технологий (структурного подразделения).</a></p>
-            </div>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Материально-техническое обеспечение и оснащенность образовательного процесса</div>
+
+
+
+                <h2>Материально-техническое обеспечение и оснащенность образовательного процесса</h2>
                 <p><b>Учебный центр имеет:</b></p>
                 <ul>
                     <li>
@@ -163,9 +189,10 @@
                     </li>
                 </ul>
                 <p><a href="">Пример оснащения компьютерного класса</a></p>
-            </div>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Стипендии и иные виды материальной поддержки</div>
+
+
+
+                <h2>Стипендии и иные виды материальной поддержки</h2>
                 <p>Учебный центр предоставляет скидки от 5 до 50 % на обучение следующим категориям граждан:</p>
                 <ul>
                     <li>
@@ -178,64 +205,81 @@
                         <p>Многодетным семьям</p>
                     </li>
                 </ul>
-            </div>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Платные образовательные услуги</div>
+
+
+
+                <h2>Платные образовательные услуги</h2>
                 <p><a href="">Прайс-лист</a></p>
                 <p><a href="">Положение о расчетах Городской школы информатики и компьютерных технологий.</a></p>
-            </div>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Финансово-хозяйственная деятельность</div>
+
+
+
+                <h2>Финансово-хозяйственная деятельность</h2>
                 <p><a href="">Отчет о расходовании средств за 2015.г</a></p>
                 <p><a href="">Бухгалтерский баланс за 2015 г.</a></p>
                 <p><a href="">План финансово-хозяйственной деятельности</a></p>
-            </div>
-            <div class="article__sub-content">
-                <div class="article__sub-header">Вакантные места для приема (Перевода)</div>
+
+
+
+                <h2>Вакантные места для приема (Перевода)</h2>
                 <p>Производим прием учащихся на 2016 -2017 учебный год. Количество мест не ограничено.</p>
+
+
+
+
             </div>
-            <br>
-            <br>
-            <br>
         </div>
+    </section>
+    <!-- END CONTENT -->
 
+    <!-- BEGIN FOOTER -->
+    <footer class="footer">
 
-        <!-- BEGIN FOOTER -->
-        <footer class="footer">
-            <div class="content-960">
-                <ul class="footer__nav">
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Учебные курсы</a></li>
-                    <li><a href="">Профессиональные курсы</a></li>
-                    <li><a href="">Школа информатики</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-                <a href="" class="logo">
-                    <img src="img/logo.png" alt="">
-                </a>
-                <div class="footer__address">
-                    <p>Сведения об образовательной организации</p>
-                    <p>г.Тюмень, Ул.Республики, 61, 2-ой этаж</p>
-                </div>
-                <div class="footer__numbers">
-                    <a href="">+7 (3452) 46-33-18</a>
-                    <a href=""> +7 (3452) 38–77–77</a>
-                </div>
-                <div class="footer__social">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+            <div class="footer__bottom">
+                <div class="content-960">
+                    <ul class="footer__nav">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Учебные курсы</a></li>
+                        <li><a href="">Профессиональные курсы</a></li>
+                        <li><a href="">Школа информатики</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                    <ul class="grid">
+                        <li class="grid__col-3">
+                            <a href="" class="logo">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li class="grid__col-4">
+                            <div class="footer__address">
+                                <a href="">Сведения об образовательной организации</a>
+                                <p>г.Тюмень, Ул.Республики, 61, 2-ой этаж</p>
+                            </div>
+                        </li>
+                        <li class="grid__col-2">
+                            <div class="footer__numbers">
+                                <a href="">+7 (3452) 46-33-18</a>
+                                <a href="">+7 (3452) 38–77–77</a>
+                            </div>
+                        </li>
+                        <li class="grid__col-3">
+                            <div class="social-network-list">
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        <!-- END FOOTER -->
 
-        <script src="js/vendor/jquery.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd-ZXO2cYSofsPVLtW-MfWdKzIDCiI-d8"></script>
-        <script src="js/vendor/gmaps.min.js"></script>
-        <script src="js/vendor/owl/owl.carousel.min.js"></script>
-        <script src="js/app.js"></script>
-    </body>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/owl/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
 </html>
